@@ -3,7 +3,7 @@
 Project page for “Beyond Task-Oriented and Chitchat Dialogues: Proactive and Transition-Aware Conversational Agents”.
 
 ## Links
-- Project page: https://still-with-you.github.io/page/tact/
+- Project page: https://still-with-you.github.io/pages/tact/
 - Paper (ACL Anthology): https://aclanthology.org/2025.emnlp-main.672/
 - arXiv: https://arxiv.org/abs/2511.08835
 - Code: https://github.com/HYU-NLP/TACT
