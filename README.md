@@ -1,4 +1,4 @@
-# Research Pages
+# Research Project Pages
 
 This repository hosts research project pages. The root page redirects to the main portfolio site:
 
