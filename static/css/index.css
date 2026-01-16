@@ -479,6 +479,10 @@ body {
   max-width: 520px;
 }
 
+.narrative-figures .figure-xlarge {
+  max-width: 640px;
+}
+
 .figure-row {
   display: flex;
   flex-wrap: wrap;
@@ -499,6 +503,7 @@ body {
   width: 100%;
   align-self: center;
 }
+
 
 @media screen and (max-width: 1024px) {
   .narrative-block {

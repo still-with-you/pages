@@ -63,7 +63,7 @@
   <title>BlendX: Complex Multi-Intent Detection with Blended Patterns</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/png" href="static/images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
   <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
   
   <!-- Critical CSS - Load synchronously -->
@@ -152,7 +152,7 @@
     "url": "https://still-with-you.github.io/pages/blendx/",
     "image": "https://still-with-you.github.io/pages/blendx/static/images/blendx_overview.png",
     "keywords": ["multi-intent detection", "task-oriented dialogue", "dataset", "BlendX", "LREC-COLING"],
-    "abstract": "Task-oriented dialogue systems often assume a single intent per utterance, but real users express multiple intents. BlendX is a suite of refined multi-intent detection datasets with diverse blended patterns built via rule-based heuristics and ChatGPT-assisted generation with similarity-driven selection. We introduce three metrics capturing word count, conjunction use, and pronoun usage to quantify complexity, and experiments show strong models struggle on BlendX, highlighting gaps in current MID methods.",
+    "abstract": "Task-oriented dialogue (TOD) systems are commonly designed with the presumption that each utterance represents a single intent. However, this assumption may not accurately reflect real-world situations, where users frequently express multiple intents within a single utterance. While there is an emerging interest in multi-intent detection (MID), existing in-domain datasets such as MixATIS and MixSNIPS have limitations in their formulation. To address these issues, we present BlendX, a suite of refined datasets featuring more diverse patterns than their predecessors, elevating both its complexity and diversity. For dataset construction, we utilize both rule-based heuristics as well as a generative tool—OpenAI’s ChatGPT—which is augmented with a similarity-driven strategy for utterance selection. To ensure the quality of the proposed datasets, we also introduce three novel metrics that assess the statistical properties of an utterance related to word count, conjunction use, and pronoun usage. Extensive experiments on BlendX reveal that state-of-the-art MID models struggle with the challenges posed by the new datasets, highlighting the need to reexamine the current state of the MID field.",
     "citation": "Yoon et al. 2024. BlendX: Complex Multi-Intent Detection with Blended Patterns.",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -211,18 +211,21 @@
             </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://still-with-you.github.io/" target="_blank">Yejin Yoon</a>,</span>
-              <span class="author-block">Jungyeon Lee,</span>
-              <span class="author-block">Kangsan Kim,</span>
-              <span class="author-block">Chanhee Park,</span>
+                <a href="https://still-with-you.github.io/" target="_blank">Yejin Yoon</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://galsang.github.io/" target="_blank">Taeuk Kim</a>
+                <a href="mailto:jungyune@hanyang.ac.kr">Jungyeon Lee</a><sup>1</sup>,</span>
+              <span class="author-block">Kangsan Kim<sup>1</sup>,</span>
+              <span class="author-block">Chanhee Park<sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://galsang.github.io/" target="_blank">Taeuk Kim</a><sup>1*</sup>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><a href="https://sites.google.com/view/hyu-nlp/" target="_blank">Hanyang University</a></span>
+              <span class="author-block"><sup>1</sup><a href="https://sites.google.com/view/hyu-nlp/" target="_blank">Hanyang University</a></span>
+              <span class="author-block"><sup>2</sup><a href="https://www.hyundai.com/worldwide/en" target="_blank">Hyundai Motor Company</a></span>
               <span class="author-block conference-line"><br>LREC-COLING 2024</span>
+              <span class="author-block corresponding-line"><br><sup>*</sup>Corresponding author</span>
             </div>
 
             <div class="column has-text-centered">
@@ -238,15 +241,6 @@
                     </a>
                   </span>
 
-                  <span class="link-block">
-                    <a href="https://arxiv.org/abs/2403.18277" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                      </span>
-                      <span>arXiv</span>
-                    </a>
-                  </span>
 
                   <span class="link-block">
                     <a href="https://github.com/HYU-NLP/BlendX" target="_blank"
@@ -265,6 +259,16 @@
                         <i class="fas fa-database"></i>
                       </span>
                       <span>Dataset</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2403.18277" target="_blank"
+                    class="external-link button is-normal is-rounded is-muted">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
                     </a>
                   </span>
 
@@ -320,7 +324,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Task-oriented dialogue (TOD) systems often assume a single intent per utterance, but real users frequently express multiple intents. BlendX is a suite of refined multi-intent detection datasets with diverse blended patterns built via rule-based heuristics and ChatGPT-assisted generation with similarity-driven selection. We introduce three metrics that quantify utterance complexity using word count, conjunction use, and pronoun usage. Experiments show that strong MID models still struggle on BlendX, highlighting the need to revisit current multi-intent detection methods.
+            Task-oriented dialogue (TOD) systems are commonly designed with the presumption that each utterance represents a single intent. However, this assumption may not accurately reflect real-world situations, where users frequently express multiple intents within a single utterance. While there is an emerging interest in multi-intent detection (MID), existing in-domain datasets such as MixATIS and MixSNIPS have limitations in their formulation. To address these issues, we present BlendX, a suite of refined datasets featuring more diverse patterns than their predecessors, elevating both its complexity and diversity. For dataset construction, we utilize both rule-based heuristics as well as a generative tool—OpenAI’s ChatGPT—which is augmented with a similarity-driven strategy for utterance selection. To ensure the quality of the proposed datasets, we also introduce three novel metrics that assess the statistical properties of an utterance related to word count, conjunction use, and pronoun usage. Extensive experiments on BlendX reveal that state-of-the-art MID models struggle with the challenges posed by the new datasets, highlighting the need to reexamine the current state of the MID field.
           </p>
         </div>
       </div>
@@ -337,22 +341,80 @@
         <h2 class="title is-3 overview-title">Overview</h2>
 
         <h3 class="title is-4">Motivation</h3>
-        <p>
-          Multi-intent detection (MID) is central to realistic task-oriented dialogue, yet many datasets still assume a single intent per utterance. Existing in-domain datasets such as MixATIS and MixSNIPS capture limited blending patterns and under-represent harder, naturally mixed requests.
-        </p>
+        <div class="narrative-block pref-align">
+          <div class="narrative-text">
+            <br>
+            <p>
+              Task-oriented dialogue (TOD) systems typically assume that each user utterance corresponds to a single intent, but real-world interactions frequently violate this assumption. Multi-intent detection (MID) aims to address this gap, yet benchmarks such as MixATIS and MixSNIPS often exhibit overly simplistic merging patterns (e.g., limited conjunction templates), which can provide shallow cues for models. BlendX is motivated by the need for a more rigorous and diverse MID testbed that goes beyond naive concatenation and better captures complex blended patterns found in natural conversations.
+            </p>
+          </div>
+          <div class="narrative-figures">
+            <figure class="figure-card section-figure figure-shift-right figure-xlarge">
+              <img src="static/images/blendx-motivation.png" alt="Motivation for multi-intent detection in BlendX" loading="lazy">
+              <figcaption>Figure 1. From MixX to BlendX: beyond naive concatenation.</figcaption>
+            </figure>
+          </div>
+        </div>
 
         <h3 class="title is-4">Dataset Construction</h3>
         <p>
-          BlendX is built from ATIS, Banking77, CLINC150, and SNIPS. Single-intent utterances are blended using both manual rules and ChatGPT-assisted generation with similarity-based selection. The resulting datasets expand the space of blended patterns while keeping sources separate to preserve domain consistency.
+          BlendX extends four single-intent datasets:
+          <a href="https://aclanthology.org/H90-1021/" target="_blank"><strong>ATIS</strong></a>,
+          <a href="https://arxiv.org/abs/1805.10190v3" target="_blank"><strong>SNIPS</strong></a>,
+          <a href="https://aclanthology.org/2020.nlp4convai-1.5/" target="_blank"><strong>Banking77</strong></a>, and
+          <a href="https://aclanthology.org/D19-1131/" target="_blank"><strong>CLINC150</strong></a>,
+          producing <strong>BlendATIS</strong>, <strong>BlendSNIPS</strong>, <strong>BlendBanking77</strong>, and <strong>BlendCLINC150</strong>.
         </p>
-        <figure class="figure-card section-figure full-width">
-          <img src="static/images/blendx_overview.png" alt="BlendX construction overview" loading="lazy">
-          <figcaption>Figure 1. BlendX construction pipeline and blended pattern coverage.</figcaption>
+        <figure class="figure-card section-figure full-width figure-shift">
+          <img src="static/images/blendx-concat.png" alt="BlendX concatenation patterns" loading="lazy">
+          <figcaption>Figure 3. Concatenation taxonomy in BlendX.</figcaption>
         </figure>
+        <p>
+          The BlendX concatenation space is defined by two axes—complexity (explicit vs. implicit) and methodology (naive/manual vs. generative)—covering diverse blended patterns such as omissions, coreferences, and gerund phrases.
+        </p>
+        <p>
+          These axes motivate three complementary construction approaches: a naive approach with explicit concatenation using AND-variant connectors, a manual approach with rule-based heuristics and broader conjunction patterns (including omission and gerund phrasing), and a generative approach that uses ChatGPT to produce more natural, implicit merges while preserving original intents. To model realistic complexity, BlendX covers both explicit concatenation and implicit patterns such as ambiguities, omissions, and coreferences.
+        </p>
+        <figure class="figure-card section-figure full-width figure-shift">
+          <img src="static/images/blendx-approaches.png" alt="BlendX construction approaches" loading="lazy">
+        </figure>
+        <p>
+          To improve LLM-based generation quality, BlendX applies a similarity-based selection strategy using SBERT cosine similarity, selecting utterance pairs above a threshold before merging. This reduces intent distortion errors compared to random selection.
+        </p>
+        <p>
+          For quality control, BlendX defines three custom metrics for word count change (W), conjunction change (C), and pronoun change (P). These metrics filter low-quality generations, followed by expert review to remove failures such as intent removal, intent change, or unsuccessful merges.
+        </p>
+
+        <figure class="figure-card section-figure full-width figure-shift">
+          <img src="static/images/blendx-metrics-sample.png" alt="BlendX metric examples" loading="lazy">
+          <figcaption>Table 3. Examples of blended patterns and their metric signatures.</figcaption>
+        </figure>
+        <p>
+          Representative explicit and implicit concatenation cases in BlendX (e.g., ambiguity, gerund phrases, omissions, coreferences), with corresponding values of the three custom metrics (W, C, P).
+        </p>
 
         <h3 class="title is-4">Evaluation</h3>
         <p>
-          We introduce three metrics that quantify complexity in blended utterances: word count, conjunction usage, and pronoun usage. Benchmarking strong MID models shows sizeable drops on BlendX, highlighting the need for models that handle richer compositional intent patterns.
+          BlendX is designed to stress-test MID systems under distribution shifts. Models trained and evaluated on MixX can perform well, but performance drops sharply on BlendX, indicating that MixX is not sufficiently challenging. Even when training on BlendX, results do not fully recover to MixX-level performance, suggesting that BlendX contains intrinsically harder patterns and requires stronger MID modeling.
+        </p>
+        <figure class="figure-card section-figure full-width figure-shift">
+          <img src="static/images/blendx-eval.png" alt="BlendX evaluation results" loading="lazy">
+          <figcaption>Table 6. Benchmark performance on MixX vs. BlendX.</figcaption>
+        </figure>
+        <p>
+          Accuracy of competitive MID models under different train/test splits, highlighting substantial performance drops when evaluating on BlendX and revealing brittleness under distribution shift.
+        </p>
+
+        <h3 class="title is-4">Visualization</h3>
+        <p>
+          We visualize semantic structure with SBERT embeddings and t-SNE projections to compare MixX and BlendX distributions.
+        </p>
+        <figure class="figure-card section-figure figure-shift figure-tight">
+          <img src="static/images/blendx-vis.png" alt="BlendX visualization" loading="lazy">
+          <figcaption>Figure 6. Embedding-space visualization of MixX vs. BlendX.</figcaption>
+        </figure>
+        <p>
+          The projection shows that BlendX remains semantically grounded while exhibiting broader and more diverse distributions than MixX.
         </p>
 
         <h3 class="title is-4">Resources</h3>
@@ -379,17 +441,8 @@
       </div>
       <pre id="bibtex-code"><code>@inproceedings{yoon-etal-2024-blendx-complex,
   title = "{B}lend{X}: Complex Multi-Intent Detection with Blended Patterns",
-  author = "Yoon, Yejin  and
-    Lee, Jungyeon  and
-    Kim, Kangsan  and
-    Park, Chanhee  and
-    Kim, Taeuk",
-  editor = "Calzolari, Nicoletta  and
-    Kan, Min-Yen  and
-    Hoste, Veronique  and
-    Lenci, Alessandro  and
-    Sakti, Sakriani  and
-    Xue, Nianwen",
+  author = "Yoon, Yejin and Lee, Jungyeon and Kim, Kangsan and Park, Chanhee and Kim, Taeuk",
+  editor = "Calzolari, Nicoletta and Kan, Min-Yen and Hoste, Veronique and Lenci, Alessandro and Sakti, Sakriani and Xue, Nianwen",
   booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
   month = may,
   year = "2024",
